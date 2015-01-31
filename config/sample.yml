@@ -1,0 +1,4 @@
+sample:
+  alpha: 12
+  beta: howdy
+  gamma: "http://www.example.com"
