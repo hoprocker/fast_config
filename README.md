@@ -1,10 +1,10 @@
-#SimpleConfig
+#FastConfig
 
 ##Installation
 
 * Add to Gemfile
 
-        gem "simple_config"
+        gem "fast_config"
 
 * Install the gem
 
@@ -14,10 +14,10 @@
 
 * Extend your class with the module, and use settings however you like.
 
-        require 'simple_config'
+        require 'fast_config'
         
         class MyClassName
-          extend SimpleConfig
+          extend FastConfig
 
           def self.setting_plus_1(setting_name)
             return settings[setting_name] + 1 # use settings however

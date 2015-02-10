@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative "sample.rb"
 
-class TestSimpleConfig < MiniTest::Unit::TestCase
+class TestFastConfig < MiniTest::Unit::TestCase
 #  def setup
 #  end
 #

@@ -1,5 +1,5 @@
-#require 'simple_config' # do this if using the gem
-require_relative "../lib/simple_config"  # this is just for this test.
+#require 'fast_config' # do this if using the gem
+require_relative "../lib/fast_config"  # this is just for this test.
 
 class Sample
   extend SimpleConfig
