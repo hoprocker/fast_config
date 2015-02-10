@@ -1,6 +1,6 @@
 require 'yaml'
 
-module SimpleConfig
+module FastConfig
   def self.extended(main_class)
     configs = YAML.load_file(File.expand_path("config/#{snake_case(main_class)}.yml"))
     configs[snake_case(main_class)].each{ |k,v| main_class.set(k.to_sym, v) }
