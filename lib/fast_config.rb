@@ -11,7 +11,6 @@ module FastConfig
   end
 
   def self.extended(main_class)
-    puts self.config_dir
     configs = YAML.load_file(File.expand_path("#{self.config_dir}/#{snake_case(main_class)}.yml"))
     configs[snake_case(main_class)].each{ |k,v| main_class.set(k.to_sym, v) }
     super
