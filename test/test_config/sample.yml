@@ -1,0 +1,4 @@
+sample:
+  alpha: 13
+  beta: "custom config path"
+  gamma: "http://www.sample.com"

@@ -1,8 +1,18 @@
 require 'yaml'
 
 module FastConfig
+  @@config_dir = nil
+  def self.config_dir=(dir)
+    @@config_dir = dir
+  end
+
+  def self.config_dir
+    ENV['FAST_CONFIG_DIR'] || @@config_dir || "config"
+  end
+
   def self.extended(main_class)
-    configs = YAML.load_file(File.expand_path("config/#{snake_case(main_class)}.yml"))
+    puts self.config_dir
+    configs = YAML.load_file(File.expand_path("#{self.config_dir}/#{snake_case(main_class)}.yml"))
     configs[snake_case(main_class)].each{ |k,v| main_class.set(k.to_sym, v) }
     super
   end

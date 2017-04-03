@@ -2,7 +2,7 @@
 require_relative "../lib/fast_config"  # this is just for this test.
 
 class Sample
-  extend SimpleConfig
+  extend FastConfig
   
   def self.setting_plus_1(setting_name)
     return settings[setting_name] + 1

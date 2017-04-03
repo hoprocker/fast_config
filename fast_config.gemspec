@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'fast_config'
-  s.version     = '0.0.1'
-  s.date        = '2015-02-10'
+  s.version     = '0.0.2'
+  s.date        = '2017-04-03'
   s.summary     = "FAST config files"
   s.description = "Add default config files to projects just by including the gem."
   s.authors     = ["Chris Reister"]
