@@ -1,4 +1,5 @@
 require 'yaml'
+require 'erb'
 
 module FastConfig
   @@config_dir = nil
@@ -11,7 +12,8 @@ module FastConfig
   end
 
   def self.extended(main_class)
-    configs = YAML.load_file(File.expand_path("#{self.config_dir}/#{snake_case(main_class)}.yml"))
+    path = File.expand_path("#{self.config_dir}/#{snake_case(main_class)}.yml")
+    configs = YAML.load(ERB.new(File.read(path)).result)
     configs[snake_case(main_class)].each{ |k,v| main_class.set(k.to_sym, v) }
     super
   end

@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.0.3 (2019-01-17)
+
+**Features:**
+
+- Added ERB support in the config
+- Cleaned up some tests
+
 ## 0.0.2 (2017-04-03)
 
 **Features:**
