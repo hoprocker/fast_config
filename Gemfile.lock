@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    simple_config (0.0.1)
+    fast_config (0.0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -12,5 +12,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fast_config!
   minitest (~> 3.0)
-  simple_config!

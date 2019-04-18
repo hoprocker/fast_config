@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.4 (2019-04-17)
+
+**Features:**
+
+- Added option to read environments (test, development, production, etc)
+
 ## 0.0.3 (2019-01-17)
 
 **Features:**

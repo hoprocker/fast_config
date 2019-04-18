@@ -1,0 +1,7 @@
+development:
+  alpha: 20
+  value_1: 100
+
+test:
+  alpha: 23
+  value_1: 300
