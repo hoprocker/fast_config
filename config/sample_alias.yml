@@ -1,0 +1,8 @@
+values: &replacement
+  key1: "a key"
+  key2: "another key"
+
+sample_alias:
+  randomvalue: "something here"
+  anothervalue: "something else here"
+  <<: *replacement
